@@ -27,6 +27,7 @@
 
 - ssh 免密碼登入 (public key)。
 - 調整 `/proc/sys/fs/inotify/` 底下的系統參數。
+- 針對 `/var/log/rsync_inotify.log` 做 logrotate。
 
 
 ---
