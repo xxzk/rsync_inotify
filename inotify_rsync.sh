@@ -19,13 +19,8 @@ do
     fi
 
     if [ ${event} == 'DELETE' ];then
-<<<<<<< HEAD
         rsync -av --delete --rsh=ssh ${dir}  $rsync_user@$remote_server1::$rsync_module/ --password-file=$password_file --log-file=/var/log/rsync_inotify.log
         rsync -av --delete --rsh=ssh ${dir}  $rsync_user@$remote_server2::$rsync_module/ --password-file=$password_file --log-file=/var/log/rsync_inotify.log
-=======
-		rsync -av --delete --rsh=ssh ${dir}  $rsync_user@$remote_server1::$rsync_module/ --password-file=$password_file --log-file=/var/log/rsync_inotify.log
-		rsync -av --delete --rsh=ssh ${dir}  $rsync_user@$remote_server2::$rsync_module/ --password-file=$password_file --log-file=/var/log/rsync_inotify.log
->>>>>>> c73a6bacc5fc5abdabcf77b0d6fda246e7f33588
     fi
 
 done
